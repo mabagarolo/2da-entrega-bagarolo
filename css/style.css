@@ -2,12 +2,12 @@ h1{
     color: burlywood;
     font-family: cursive;
     font-size: 100px;
-    padding: 1px 10px 10px 60px;
+    padding: 50px 10px 10px 60px;
     display: flexbox;
     justify-self: start;
 } 
 nav {
-    padding: 0px 4px 4px 4px;
+    padding: -0.5px 0.5px 0.5px 0.5px;
     position: fixed;
     top: 0%;
     right: 0%;
@@ -16,45 +16,95 @@ nav {
 }
 h2{
     color: chocolate;
+    background-color: lightgoldenrodyellow;
 }
 header ul{ 
     list-style-type: none;
     background-color: lightgoldenrodyellow;
     }
-h2{
-    background-color: lightgoldenrodyellow;
-}
 img{
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
+    margin: 10px 10px 10px 20px;
 }
 footer{
     background-color: burlywood;
-    position:relative; bottom: -95px;
+    position: relative; 
+    bottom: -50px;
 }
 h4{
     background-color:burlywood ;
 }
 section article {
-    width: 30%;
-    border: 1px solid black;
-    margin: 2px 2px 2px 2px;
+    width: 40%;
+    margin: 2px 1px 0px 0px;
 }
 footer section {
     display: flex;
-    justify-content:flex-start;
+    justify-content:flex-start; 
 }
 @media only screen and (max-width:450px){
     body {
         background-color: azure;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.05fr 0.2fr 1fr 0.5fr 0.2fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+         ;
     }
 }
 @media only screen and (min-width:451px) and (max-width:950px) {
     body {
         background-color:blanchedalmond;
     }   
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.1fr 0.4fr 1fr 0.5fr 0.2fr;
+        grid-template-areas: 
+        "header    header"
+        "main      main"
+        "footer    footer"
+        ;
+    }
 }
 @media only screen and (min-width:951px) {
     body {
-    background-color:rgb(165, 161, 42) ;}
+    background-color:rgb(193, 234, 239) ;}
+}
+.image {
+    display: inline-block;
+}
+.redes-sociales {
+    padding: 15px 0px 5px 5px;
+    position: absolute;
+    display: flexbox;
+    justify-content: center;  
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 2.5%;
+}
+.trayectoria {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 0.1%;
+}
+.preguntas-y-repuestas {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 0.1%;
+}
+select {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    left: 3%;
+}
+.datos-personales {
+    position: relative;
+    left: 3%;  
 }
