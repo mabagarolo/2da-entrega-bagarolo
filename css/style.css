@@ -43,7 +43,7 @@ footer section {
     display: flex;
     justify-content:flex-start; 
 }
-@media only screen and (max-width:450px){
+@media only screen and (max-width:400px){
     body {
         background-color: azure;
     }
@@ -57,7 +57,7 @@ footer section {
          ;
     }
 }
-@media only screen and (min-width:451px) and (max-width:950px) {
+@media only screen and (min-width:401px) and (max-width:900px) {
     body {
         background-color:blanchedalmond;
     }   
@@ -71,7 +71,7 @@ footer section {
         ;
     }
 }
-@media only screen and (min-width:951px) {
+@media only screen and (min-width:901px) {
     body {
     background-color:rgb(193, 234, 239) ;}
 }
